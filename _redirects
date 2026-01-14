@@ -1,0 +1,10 @@
+# Clean URLs - redirect .html to non-.html
+/index.html    /           301
+/404.html      /404        301
+
+# Serve HTML files without extension
+/404    /404.html    200
+
+# Block access to client preview directories (return 404 to hide them)
+# Note: Cloudflare Pages doesn't support bot-specific blocking like .htaccess
+# These pages are still accessible but won't be indexed due to noindex meta tags

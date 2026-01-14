@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your New Website Design | BrokenWebsites.com.au</title>
+    <meta name="description" content="Here's the custom website design I created for your business.">
+    
+    <!-- NO INDEX, NO FOLLOW - Keep this page private -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚠️</text></svg>">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <!-- Critical CSS -->
+    <style>
+        @font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2')}
+        @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hjp-Ek-_0ew.woff2) format('woff2')}
+        *{box-sizing:border-box;font-family:'Inter',sans-serif}
+        h1,h2,h3,.font-heading{font-family:'Bebas Neue',sans-serif}
+        
+        /* LOCK HORIZONTAL SCROLL & CENTER - Site-wide */
+        html{margin:0;background:#171717;color:#fff;min-height:100vh;overflow-x:hidden!important;max-width:100%;width:100%;-webkit-overflow-scrolling:touch;overscroll-behavior-x:none}
+        body{margin:0;padding:0;background:#171717;color:#fff;min-height:100vh;overflow-x:hidden!important;max-width:100%;width:100%;position:relative}
+        main,section,header,footer,nav,div{max-width:100%;overflow-x:hidden}
+        ::-webkit-scrollbar{width:8px;background:#171717}
+        ::-webkit-scrollbar-thumb{background:#333;border-radius:4px}
+        .text-glitch{color:#A7F3D0}
+        .text-caution{color:#FFD470}
+        .bg-glitch{background:#A7F3D0}
+        .bg-charcoal{background:#171717}
+        img{max-width:100%;height:auto;display:block}
+        
+        @keyframes logoGlitch{0%,100%{transform:none;opacity:1;text-shadow:none}10%{transform:translate(-3px,1px) skew(-3deg);opacity:.7;text-shadow:3px 0 #A7F3D0,-3px 0 #FFD470}50%{transform:translate(-1px,1px) skew(1deg);opacity:.7;text-shadow:2px 0 #A7F3D0}90%{transform:translate(0,-1px);opacity:.95}}
+        .logo-glitch{position:relative;display:inline-block}
+        
+        .broken-border{position:relative;margin:8px}
+        .broken-border::before{content:'';position:absolute;top:-4px;left:-4px;right:-4px;bottom:-4px;border:3px dashed #A7F3D0;transform:rotate(-0.5deg)}
+        .broken-border::after{content:'';position:absolute;top:-8px;left:-8px;right:-8px;bottom:-8px;border:2px solid #FFD470;transform:rotate(0.5deg)}
+        
+        /* Contain overflow on main wrapper */
+        main{overflow-x:hidden}
+        
+        .watermark-overlay{position:relative}
+        .watermark-overlay::before{content:'PREVIEW - BROKENWEBSITES.COM.AU';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-30deg);font-family:'Bebas Neue',sans-serif;font-size:3rem;color:rgba(167,243,208,0.15);white-space:nowrap;pointer-events:none;z-index:10}
+    </style>
+</head>
+
+<body class="bg-charcoal text-white min-h-screen">
+    
+    <!-- Noise Overlay -->
+    <div style="position:fixed;inset:0;pointer-events:none;z-index:50;opacity:0.03;background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;);background-size:150px"></div>
+    
+    <!-- Header -->
+    <header class="py-6 border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <a href="/" class="font-heading text-2xl sm:text-3xl tracking-wider" style="text-decoration:none">
+                <span class="text-glitch">BROKEN</span><span class="text-caution logo-glitch" data-text="WEBSITES">WEBSITES</span>
+            </a>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Intro -->
+            <div class="text-center mb-12">
+                <span class="bg-glitch/20 text-glitch px-4 py-2 text-sm font-bold border border-glitch/50 inline-block mb-6">🎨 YOUR CUSTOM DESIGN</span>
+                <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl text-white mb-4">HERE'S WHAT I MADE FOR YOU</h1>
+                <p class="text-xl text-white/70 max-w-2xl mx-auto">
+                    I found your website, saw it needed some love, and designed this for you. 
+                    <span class="text-glitch font-bold">No obligation</span> — if you love it, buy it, fill in the form with your info, I'll code it up asap and you'll be live in 7 days! If not, no worries.
+                </p>
+            </div>
+            
+            <!-- Design Preview -->
+            <!-- ============================================ -->
+            <!-- CHANGE THE IMAGE PATH BELOW FOR EACH CLIENT -->
+            <!-- ============================================ -->
+            <div class="mb-12">
+                <div class="broken-border bg-charcoal/50 p-2 sm:p-4 watermark-overlay">
+                    <img src="../example/brokenwebsites.png" alt="Your new website design preview" width="1200" height="800" loading="eager" fetchpriority="high" style="width:100%;height:auto;object-fit:contain;margin:0 auto;display:block">
+                </div>
+                <p class="text-center text-white/40 text-sm mt-4">This is a design preview, watermarked. The final coded website will be watermark free, fully responsive and lightning fast.</p>
+            </div>
+            
+            <!-- What's Included -->
+            <div class="bg-white/5 border border-white/10 p-10 sm:p-12 mb-12">
+                <h2 class="font-heading text-4xl sm:text-5xl text-white mb-10 text-center">WHAT YOU GET FOR $500</h2>
+                <div class="grid sm:grid-cols-3 gap-8 sm:gap-12 text-center">
+                    <div>
+                        <div style="font-size:4rem;margin-bottom:1rem">🎨</div>
+                        <h3 class="font-bold text-glitch text-xl sm:text-2xl mb-2">This Design</h3>
+                        <p class="text-white/60 text-base sm:text-lg">Exactly what you see, coded up and ready to go</p>
+                    </div>
+                    <div>
+                        <div style="font-size:4rem;margin-bottom:1rem">⚡</div>
+                        <h3 class="font-bold text-glitch text-xl sm:text-2xl mb-2">Live in 7 Days</h3>
+                        <p class="text-white/60 text-base sm:text-lg">Fast turnaround, no mucking about</p>
+                    </div>
+                    <div>
+                        <div style="font-size:4rem;margin-bottom:1rem">🇦🇺</div>
+                        <h3 class="font-bold text-glitch text-xl sm:text-2xl mb-2">Aussie Hosted</h3>
+                        <p class="text-white/60 text-base sm:text-lg">$29/month for bulletproof hosting</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="text-center">
+                <h2 class="font-heading text-3xl sm:text-4xl text-white mb-4">LIKE WHAT YOU SEE?</h2>
+                <p class="text-lg text-white/70 mb-8 max-w-xl mx-auto">Pay $500, I'll code it up, and you'll be live in 7 days. No meetings, no bullshit. Just a website that actually works.</p>
+                <a href="https://buy.stripe.com/aFadR32kydrDgLq7968EM01" class="inline-block bg-glitch text-charcoal px-12 py-6 text-2xl sm:text-3xl font-bold hover:bg-caution transition-all transform hover:scale-105 shadow-2xl mb-6" style="text-decoration:none;box-shadow:0 25px 50px -12px rgba(167,243,208,0.3)">$500 - I WANT IT</a>
+                <p class="text-white/40 text-sm">Not interested? No worries at all. Just delete this email and I'll never bother you again.</p>
+            </div>
+            
+            <!-- Questions -->
+            <div class="mt-16 pt-8 border-t border-white/10 text-center">
+                <p class="text-white/50 mb-4">Got questions before you commit?</p>
+                <a href="/#faq" class="text-glitch hover:text-caution transition-colors font-bold" style="text-decoration:none">Check out the FAQ →</a>
+            </div>
+            
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/10 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <a href="/" class="font-heading text-xl" style="text-decoration:none">
+                <span class="text-glitch">BROKEN</span><span class="text-caution logo-glitch" data-text="WEBSITES">WEBSITES</span><span class="text-white/50">.COM.AU</span>
+            </a>
+            <p class="text-white/30 text-xs mt-2">ABN: 13 397 539 044 | Melbourne, Australia 🇦🇺</p>
+            <p class="text-white/20 text-xs mt-1">This page is not indexed by search engines.</p>
+        </div>
+    </footer>
+    
+    <!-- Load Tailwind at end -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'glitch': '#A7F3D0',
+                        'caution': '#FFD470',
+                        'charcoal': '#171717',
+                    },
+                    fontFamily: {
+                        'heading': ['Bebas Neue', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Logo Glitch Effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const glitchElements = document.querySelectorAll('.logo-glitch');
+            function triggerRandomGlitch() {
+                glitchElements.forEach(el => {
+                    const randomDelay = Math.random() * 9000 + 3000;
+                    setTimeout(() => {
+                        el.style.animation = 'none';
+                        el.offsetHeight;
+                        el.style.animation = 'logoGlitch 0.5s ease-in-out';
+                        setTimeout(() => {
+                            el.style.animation = '';
+                            triggerRandomGlitch();
+                        }, 500);
+                    }, randomDelay);
+                });
+            }
+            triggerRandomGlitch();
+        });
+    </script>
+</body>
+</html>
+

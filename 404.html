@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | BrokenWebsites.com.au</title>
+    <meta name="description" content="This page is broken. Ironic, isn't it?">
+    
+    <!-- Robots: noindex but follow links -->
+    <meta name="robots" content="noindex, follow">
+    <meta name="googlebot" content="noindex, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚠️</text></svg>">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Critical CSS -->
+    <style>
+        @font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2')}
+        @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hjp-Ek-_0ew.woff2) format('woff2')}
+        *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif}
+        h1,h2,.font-heading{font-family:'Bebas Neue',sans-serif}
+        
+        /* LOCK HORIZONTAL SCROLL & CENTER - Site-wide */
+        html{background:#171717;color:#fff;min-height:100vh;overflow-x:hidden!important;max-width:100%;width:100%;-webkit-overflow-scrolling:touch;overscroll-behavior-x:none}
+        body{background:#171717;color:#fff;min-height:100vh;overflow-x:hidden!important;max-width:100%;width:100%;position:relative;display:flex;flex-direction:column}
+        main,section,header,footer,nav,div{max-width:100%;overflow-x:hidden}
+        ::-webkit-scrollbar{width:8px;background:#171717}
+        ::-webkit-scrollbar-thumb{background:#333;border-radius:4px}
+        .text-glitch{color:#A7F3D0}
+        .text-caution{color:#FFD470}
+        .bg-glitch{background:#A7F3D0}
+        .text-charcoal{color:#171717}
+        @keyframes glitch{0%{transform:translate(0)}20%{transform:translate(-3px,3px)}40%{transform:translate(-3px,-3px)}60%{transform:translate(3px,3px)}80%{transform:translate(3px,-3px)}100%{transform:translate(0)}}
+        .glitch-text{position:relative;animation:glitch .3s infinite}
+        .glitch-text::before,.glitch-text::after{content:attr(data-text);position:absolute;top:0;left:0;width:100%;height:100%}
+        .glitch-text::before{left:2px;text-shadow:-2px 0 #A7F3D0;clip:rect(24px,550px,90px,0);animation:glitch .5s infinite linear alternate-reverse}
+        .glitch-text::after{left:-2px;text-shadow:-2px 0 #FFD470;clip:rect(85px,550px,140px,0);animation:glitch .3s infinite linear alternate-reverse}
+        
+        /* Scanlines overlay */
+        .scanlines{position:relative}
+        .scanlines::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.1) 2px,rgba(0,0,0,0.1) 4px);pointer-events:none;z-index:10}
+    </style>
+</head>
+
+<body>
+    <!-- Noise Overlay -->
+    <div style="position:fixed;inset:0;pointer-events:none;z-index:50;opacity:0.03;background-image:url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;);background-size:150px"></div>
+    
+    <!-- Main Content -->
+    <main class="scanlines" style="flex:1;display:flex;align-items:center;justify-content:center;padding:4rem 1rem">
+        <div style="text-align:center;max-width:42rem">
+            
+            <!-- 404 Number -->
+            <div style="margin-bottom:2rem">
+                <span class="font-heading glitch-text" data-text="404" style="font-size:clamp(8rem,20vw,16rem);line-height:1;color:rgba(255,255,255,0.1)">404</span>
+            </div>
+            
+            <!-- Message -->
+            <h1 class="font-heading" style="font-size:clamp(2rem,6vw,3.75rem);margin-bottom:1rem">
+                WELL, THIS IS <span class="text-caution">AWKWARD</span>
+            </h1>
+            
+            <p style="font-size:clamp(1.125rem,3vw,1.5rem);color:rgba(255,255,255,0.7);margin-bottom:1rem">
+                A website that fixes broken websites... has a broken page.
+            </p>
+            
+            <p style="font-size:1.125rem;color:rgba(255,255,255,0.5);margin-bottom:2rem">
+                The irony isn't lost on us. But hey, at least we know how to fix it.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center">
+                <a href="/" class="bg-glitch text-charcoal" style="display:inline-block;padding:1rem 2rem;font-size:1.25rem;font-weight:700;text-decoration:none;transition:all 0.2s">← BACK TO HOME</a>
+                <a href="/#faq" style="display:inline-block;padding:1rem 2rem;font-size:1.25rem;font-weight:700;text-decoration:none;border:2px solid rgba(255,255,255,0.3);color:#fff;transition:all 0.2s">GOT QUESTIONS?</a>
+            </div>
+            
+            <!-- Fun message -->
+            <p style="margin-top:3rem;color:rgba(255,255,255,0.3);font-size:0.875rem">
+                If you think YOUR website is broken, you should see what we started with.
+            </p>
+            
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer style="padding:2rem 0;border-top:1px solid rgba(255,255,255,0.1);text-align:center">
+        <a href="/" class="font-heading" style="font-size:1.25rem;text-decoration:none">
+            <span class="text-glitch">BROKEN</span><span class="text-caution">WEBSITES</span><span style="color:rgba(255,255,255,0.5)">.COM.AU</span>
+        </a>
+        <p style="color:rgba(255,255,255,0.3);font-size:0.75rem;margin-top:0.5rem">ABN: 13 397 539 044 | Melbourne, Australia 🇦🇺</p>
+    </footer>
+</body>
+</html>
