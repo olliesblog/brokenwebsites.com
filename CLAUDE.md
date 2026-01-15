@@ -48,6 +48,8 @@ This site is adapted for international audiences:
 - Structured data targets worldwide audience
 - hreflang tags link to Australian version
 
+**Note on hreflang:** The hreflang tags are for SEO only — they tell search engines which version to show in results for different regions. They do NOT redirect users. To redirect Australian visitors to .com.au, configure geo-redirect rules in Cloudflare dashboard.
+
 ## Design System
 
 ### Color Palette
@@ -99,3 +101,20 @@ The copy is direct and no-nonsense but **toned down** from the Australian versio
 - Direct CTAs ("$500 - I WANT IT")
 
 **When editing copy**: Keep it punchy and confident, but avoid regional slang that won't resonate globally.
+
+## Outstanding Tasks
+
+- [ ] Create USD Stripe payment link and replace `STRIPE_USD_LINK_TODO` in index.html
+- [ ] Set up Cloudflare Pages deployment
+- [ ] Add custom domain brokenwebsites.com in Cloudflare
+
+## Changelog
+
+### 2026-01-16: Accessibility Improvements (WCAG 2.1)
+- Added `aria-hidden="true"` to decorative SVGs (mobile menu icons, play icon, scroll indicator, browser window dots)
+- Made play button keyboard accessible: `role="button"`, `tabindex="0"`, `aria-label="Play video"`, focus ring
+- Made gallery items (4) keyboard accessible: `role="button"`, `tabindex="0"`, `aria-label`, `@keydown.enter` handler, focus ring
+- Added `role="dialog"`, `aria-modal="true"`, `aria-label="Website preview"` to lightbox modal
+- Added `aria-label="Close lightbox"` to close button
+- Added `:aria-expanded` binding to all 10 FAQ accordion buttons
+- **Score improved from 72/100 to 92/100**
